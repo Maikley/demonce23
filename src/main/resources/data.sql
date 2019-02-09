@@ -1,0 +1,1 @@
+INSERT INTO book (author,name) VALUES ('what','i');

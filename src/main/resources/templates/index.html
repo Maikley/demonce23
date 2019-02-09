@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>My project</title>
+</head>
+<body>
+<title>List of title</title>
+<table>
+    <tr>
+
+    <th>Name</th>
+    <th>Author</th>
+    </tr>
+
+
+
+<tr th:each="book: ${books}">
+    <td th:text="${book.name}" />
+    <td th:text="${book.author}" />
+</tr>
+</table>
+</body>
+</html>
