@@ -5,7 +5,7 @@
     <title>My project</title>
 </head>
 <body>
-<title>List of title</title>
+<h3>List of title</h3>
 <table>
     <tr>
 
@@ -20,5 +20,15 @@
     <td th:text="${book.author}" />
 </tr>
 </table>
+
+<h1>Form</h1>
+<form action="#" th:action="@{/}" th:object="${newbook}" method="post">
+    <p>Author: <input type="text" th:field="*{author}" /></p>
+    <p>Name: <input type="text" th:field="*{name}" /></p>
+    <p><input type="submit" value="SCreate new book" /> <input type="reset" value="Reset" /></p>
+</form>
+
+
+
 </body>
 </html>
